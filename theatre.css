@@ -1,0 +1,65 @@
+@font-face {
+    font-family: icomoonall;
+    src: url('chrome-extension://__MSG_@@extension_id__/icomoon.ttf');
+}
+
+body.theatre-mode .views-container {
+  overflow-y: hidden !important;
+}
+
+button.theatre {
+  width: 40px !important;
+  padding: 0 !important;
+}
+
+span.theatre-icon {
+  text-indent: -100000px;
+  display: inline-block;
+  width: 38px;
+  height: 30px;
+}
+
+body.theatre-mode .channel-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*right: 0;*/
+  /*bottom: 0;*/
+  z-index: 10000000000;
+  margin: 0 !important;
+  width: 900px;
+}
+
+body.theatre-mode .chat-container {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /*right: 0;*/
+  /*bottom: 0;*/
+  z-index: 10000000001 !important;
+  padding: 0 !important;
+}
+
+body.theatre-mode .stream-target.offline img {
+  opacity: 1 !important;
+}
+
+body.theatre-mode .stream-target {
+  background: #11131b;
+  /*width: 900px;*/
+}
+
+body.theatre-mode .channel-controls, body.theatre-mode .channel-profile, body.theatre-mode .view-content .spaced-top-3 {
+  display: none
+}
+
+body.theatre-mode .navbar {
+  visibility: hidden;
+}
+
+.icon-film:before {
+  font-family: icomoonall;
+  content: "\e913";
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Beam Theatre",
+  "description": "Adds theatre mode to beam.pro",
+  "version": "1.0.0",
+
+  "content_scripts":[
+    {
+      "matches": ["https://beam.pro/*", "http://beam.pro/*"],
+      "js": ["jquery.js", "jqueryui.js", "theatre.js"],
+      "css": ["jqueryui.css", "theatre.css"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "theatre.png",
+    "icomoon.ttf"
+  ],
+
+  "permissions": [
+    "storage"
+  ]
+}
